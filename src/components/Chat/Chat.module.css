@@ -1,0 +1,60 @@
+.chatWraper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #e4e1e1;
+  padding: 8px;
+}
+
+.userList {
+  color: #07061f;
+  cursor: pointer;
+}
+
+.userList:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.chatListWraper {
+  padding: 10px;
+}
+
+.chatTitle {
+  margin: 0;
+  padding-left: 8px;
+  text-align: center;
+}
+
+.chatList {
+  display: grid;
+}
+
+.chatItem {
+  text-align: right;
+  width: max-content;
+  padding: 8px 16px;
+  max-width: 70%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.user {
+  justify-self: flex-end;
+  background: #ed3984;
+  color: #fff;
+  border-radius: 20px 20px 4px 20px;
+}
+
+.operator {
+  justify-self: flex-start;
+  background: #f4f4f4;
+  color: #07061f;
+  border-radius: 20px 20px 20px 4px;
+}
